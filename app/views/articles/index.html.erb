@@ -3,7 +3,7 @@
 <ul>
   <% @articles.each do |article| %>
     <li>
-      <a href="/articles/<%= article.id %>">
+      <a href="<%= article_path(article) %>"> <!-- once we change our get paths to resources this way <a href="/articles/<%= article.id %>">  is no longer valid-->
         <%= article.title %>
      </a>
     </li>
